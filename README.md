@@ -13,10 +13,10 @@ Initiate PHP web server from the root directory of the project
 
 The current configuration for the MySQL server that I was testing it on and how it's configured in mysqli_connect.php:
 
-DEFINE ('DB_USER', 'general');
-DEFINE ('DB_PASSWORD', 'ser322');
-DEFINE ('DB_HOST', 'localhost');
-DEFINE ('DB_NAME', 'PeopleToMars');
+DEFINE ('DB_USER', 'general');</br>
+DEFINE ('DB_PASSWORD', 'ser322');</br>
+DEFINE ('DB_HOST', 'localhost');</br>
+DEFINE ('DB_NAME', 'PeopleToMars');</br>
 
 If your mySQL isn't setup exactly like this you will need to change these variables in order to get it to run
 
