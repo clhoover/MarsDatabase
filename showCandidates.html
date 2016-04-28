@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Mars-Five Candidates</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="styles/html5reset-1.6.1.css" rel="stylesheet" type="text/css" media="" />
+<link href="styles/style1.css" rel="stylesheet" type="text/css" media="" />
+
+    <script src="jQuery/jquery-1.12.3.min.js"></script>
+    <script>
+
+    function allPeople() {
+        var request = $.ajax({
+            url: "getallpeople.php",
+            type: "GET",            
+            dataType: "html"
+        });
+
+        request.done(function(msg) {
+            $("#candidates").html(msg);          
+        });
+
+        request.fail(function(jqXHR, textStatus) {
+            alert( "Request failed: " + textStatus );
+        });
+    }
+    </script>
+    <meta charset="utf-8" />
+    
+</head>
+
+<div id="header">
+    <p>Mars-Five</p>
+</div>
+
+<div id="wrap">
+    <div id="raised">
+        <div class="nav">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-fontsize">Home</a></li>
+                    <li><a href="showCandidates.html" class="nav-fontsize">Candidates</a></li>
+                    <li><a href="OtherThings.html" class="nav-fontsize">Apply</a></li>
+                    <li><a href="OtherThings.html" class="nav-fontsize">Other</a></li>
+                    <li><a href="OtherThings.html" class="nav-fontsize">Other</a></li>
+                </ul>
+            </nav>
+        <div id="banner">
+                <img src="images/MarsBanner.png" alt="icon" width="1190" height="322"/>
+               
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="innerwrap2">
+    <body>
+        Click Update to see a list of all current candidates for the Mars-Five program<br/><br/>
+        <div id="candidates">
+            
+        </div>
+        <input type="button" value="Update" onclick="allPeople()"/>
+
+    </body>
+</div>
+</html>
