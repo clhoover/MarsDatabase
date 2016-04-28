@@ -20,10 +20,10 @@ DEFINE ('DB_NAME', 'PeopleToMars');</br>
 
 If your mySQL isn't setup exactly like this you will need to change these variables in order to get it to run
 
-State of the project:
-2 html pages: Index + show all candidates
-Index is simply a landing page
-Show all candidates gives the user the option to query the SQL database to generate a list of all candidates
+State of the project:</br>
+2 html pages: Index + show all candidates</br>
+Index is simply a landing page</br>
+Show all candidates gives the user the option to query the SQL database to generate a list of all candidates</br>
 
 ![Alt text](http://i.imgur.com/e2MKuDy.png "Before First Query")
 ![Alt text](http://i.imgur.com/ESt4XLs.png "After First Query")
