@@ -29,3 +29,12 @@ Show all candidates gives the user the option to query the SQL database to gener
 ![Alt text](http://i.imgur.com/ESt4XLs.png "After First Query")
 
 
+Contributions:
+
+Christopher Hoover: Front End/PHP Coding, Implemented Git-Repo for group
+
+Jeanette Reser: Back End/SQL Coding, Data Base Normalization
+
+Mitchell Warrenburg: Develop SQL statements for video presentation, Data Base Normalization
+
+Kevin Bryant: ER Diagram, Record and create demo video
