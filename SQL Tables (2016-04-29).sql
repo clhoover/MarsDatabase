@@ -11,7 +11,11 @@ VALUES
   (234568790,65879,'Devon Court','PA','Denton',41978),
   (345678901,3345,'5th Street South','AZ','San Filipe',35974),
   (456789012,9531,'Fulton Street','WY','Edgington',64578),
-  (567890123,856977,'William Street','FL','Philsburg',31458)
+  (567890123,856977,'William Street','FL','Philsburg',31458),
+  (678901234,17995, 'Avenue B','CA','Sacramento',24544),
+  (789012345,3302,'Palmdale Avenue','CA','San Francisco',48293),
+  (890123456,628594,'Bernardo Center Drive','CA','San Diego',92126),
+  (901234567,1001,'Hollywood Drive','CA','Los Angeles',90210)
 ;
 
 CREATE TABLE Citizen
@@ -25,7 +29,11 @@ VALUES
   (234568790,' Lavern','Mclaurin','male',44,4),
   (345678901,'Maude','Messana','female',53,5),
   (456789012,' Eduardo','Bruckner','male',14,3),
-  (567890123,'Garth','Piazza','male',31,5)
+  (567890123,'Garth','Piazza','male',31,5),
+  (678901234,'Kevin','Bryant','male',33,7),
+  (789012345,'Chris','Hoover','male',27,7),
+  (890123456,'Jeanette','Reser','female',29,7),
+  (901234567,'Mitchell','Warrenburg','male',30,7)
 ;
 
 
@@ -41,7 +49,8 @@ VALUES
   (3,'English'),
   (4,'Irish'),
   (5,'Italian'),
-  (6,'Polish')
+  (6,'Polish'),
+  (7,'American')
 ;
 
 
@@ -60,7 +69,11 @@ VALUES
   (2,234568790,25,'105/72',153,4,3),
   (3,345678901,22,'128/82',184,4,8),
   (4,456789012,35,'153/92',246,8,5),
-  (5,567890123,20,'116/79',99,2,2)
+  (5,567890123,20,'116/72',99,2,2),
+  (6,678901234,21,'115/74',120,1,2),
+  (7,789012345,23,'114/73',110,2,1),
+  (8,890123456,19,'118/79',115,2,1),
+  (9,901234567,22,'109/66',99,1,1)
 ;
 
 
@@ -80,7 +93,11 @@ VALUES
   (234568790,2,20,7,5,68),
   (345678901,3,16,14,4,33),
   (456789012,4,9,13,4,20),
-  (567890123,5,18,7,7,93)
+  (567890123,5,18,7,7,93),
+  (678901234,7,16,6,7,98),
+  (789012345,9,16,5,7,76),
+  (890123456,8,16,8,6,61),
+  (901234567,6,16,7,7,82)
 ;
 
 CREATE TABLE Professions
@@ -94,13 +111,9 @@ VALUES
 	(2,'College Professor'),
 	(3,'Store Manager'),
 	(4,'Student'),
-	(5,'Civil Engineer')
-
-
-
---------------------------------------------------------------------
--- queries
---------------------------------------------------------------------
-
-select * from Skills, Citizen
-where ssn=ssn and age<40;
+	(5,'Civil Engineer'),
+	(6,'Software Engineer'),
+	(7,'Aerospace Engineer'),
+	(8,'Biologist'),
+	(9,'EMT')
+;
