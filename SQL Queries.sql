@@ -56,7 +56,7 @@ WHERE C.ssn=A.ssn AND A.ssn=S.ssn AND S.ssn=H.ssn AND C.nationality=N.nationalID
 	AND healthRiskScore < 3 
 	AND mentalHealthRating < 3 
 	AND age < 45 AND age > 16
-	AND mileTime < 8
+	AND mileTime <= 8
 	AND holdingBreathTime >= 60
 	AND gsThreshold > 5
 	AND educationLevel > 14;
