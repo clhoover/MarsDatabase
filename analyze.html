@@ -23,6 +23,21 @@
     
         });
     }
+
+    </script>
+    <script>
+    
+    $(document).ready(function(){
+	$('.group').hide();
+	$('#option1').show();
+	$('#query').change(function(){
+		var option = $(this).find(':selected')[0].id;
+		var visible = '#option'+option;
+		$('.group').hide();
+		$(visible).show();
+	})
+    });
+	
     </script>
     <meta charset="utf-8" />
     
@@ -55,37 +70,53 @@
 <div id="innerwrap2">
     <body>
         Select which query you would like to run from the dropdown box then hit analyze<br/><br/>
-        <select name="selectedQuery" id="query">
-		<option selected = "selected">SELECT * from Skills, Citizen WHERE Citizen.ssn=Skills.ssn AND age<40</option>
-		<option>SELECT C.ssn, fName, lName, gender, age, N.nationality, address, street, state, city, zipCode, P.profession, educationLevel, mileTime, gsThreshold, holdingBreathTime, bmi, bloodPressure, cholesterolLevel, healthRiskScore, mentalHealthRating 
+        <select name="selectedQuery" id="query" width="800"style="width:800px">
+		<option id="1" selected = "selected">SELECT * from Skills, Citizen WHERE Citizen.ssn=Skills.ssn AND age<40</option>
+		<option id="2">SELECT C.ssn, fName, lName, gender, age, N.nationality, address, street, state, city, zipCode, P.profession, educationLevel, mileTime, gsThreshold, holdingBreathTime, bmi, bloodPressure, cholesterolLevel, healthRiskScore, mentalHealthRating 
 FROM Citizen C, Nationality N, Address A, Skills S, Professions P, Health H
 WHERE C.ssn=A.ssn AND A.ssn=S.ssn AND S.ssn=H.ssn AND C.nationality=N.nationalID AND S.profession=P.jobID;</option>
-		<option>SELECT fName, lName, healthRiskScore, mentalHealthRating, age FROM Citizen C, Health H
+		<option id="3">SELECT fName, lName, healthRiskScore, mentalHealthRating, age FROM Citizen C, Health H
 WHERE C.ssn=H.ssn AND healthRiskScore < 5 AND mentalHealthRating < 5 AND age > 25 AND age < 44;</option>
-		<option>SELECT fName, lName, mileTime,holdingBreathTime, gsThreshold FROM Citizen C, Skills S WHERE C.ssn=S.ssn AND mileTime < 10 AND holdingBreathTime > 60 AND gsThreshold >=5;</option>
-		<option>SELECT fName, lName, educationLevel
+		<option id="4">SELECT fName, lName, mileTime,holdingBreathTime, gsThreshold FROM Citizen C, Skills S WHERE C.ssn=S.ssn AND mileTime < 10 AND holdingBreathTime > 60 AND gsThreshold >=5;</option>
+		<option id="5">SELECT fName, lName, educationLevel
 FROM Citizen C, Skills S
 WHERE C.ssn=S.ssn AND educationLevel > 14;</option>
-		<option>SELECT fName, lName, gender, age, N.nationality, P.profession, educationLevel
+		<option id="6">SELECT fName, lName, gender, age, N.nationality, P.profession, educationLevel
 FROM Citizen C, Nationality N, Skills S, Professions P
 WHERE C.ssn=S.ssn AND C.nationality=N.nationalID AND S.profession=P.jobID;</option>
-		<option>SELECT fName, lName, gender, age, N.nationality, bmi, bloodPressure, cholesterolLevel, healthRiskScore, mentalHealthRating 
+		<option id="7">SELECT fName, lName, gender, age, N.nationality, bmi, bloodPressure, cholesterolLevel, healthRiskScore, mentalHealthRating 
 FROM Citizen C, Nationality N, Health H
 WHERE C.ssn=H.ssn AND C.nationality=N.nationalID;</option>
-		<option>SELECT fName, lName FROM Citizen C, Nationality N, Address A, Skills S, Professions P, Health H
+		<option id="8">SELECT fName, lName FROM Citizen C, Nationality N, Address A, Skills S, Professions P, Health H
 WHERE C.ssn=A.ssn AND A.ssn=S.ssn AND S.ssn=H.ssn AND C.nationality=N.nationalID AND S.profession=P.jobID
 	AND healthRiskScore < 3 
 	AND mentalHealthRating < 3 
 	AND age < 45 AND age > 16
-	AND mileTime < 8
+	AND mileTime <= 8
 	AND holdingBreathTime >= 60
 	AND gsThreshold > 5
 	AND educationLevel > 14;</option>
 	</select><br/><br/>
+
+	<div id="option1" class="group">All Data</div>
+	<div id="option2" class="group">All Data without key fields except SSN</div>
+	<div id="option3" class="group">Names and applicable information of citizins who meet minimum criteria for the Mars mission</div>
+	<div id="option4" class="group">Names and applicable data of physically ideal canidates</div>
+	<div id="option5" class="group">Names and applicable data of intellectually ideal canidates</div>
+	<div id="option6" class="group">Data pertaining to who the canidates are</div>
+	<div id="option7" class="group">Data pertaining to the condition of each canidate</div>
+	<div id="option8" class="group">Names of ideal canidates</div>
+
+	
+
+	</div><br/><br/>
+
 	<div id="datashow">
             
         </div>
+	<div style="text-align:center">
         <input type="button" value="Analyze" onclick="analyze()"/>
+	</div>
 
     </body>
 </div>

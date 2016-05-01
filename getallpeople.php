@@ -11,7 +11,7 @@ $response = @mysqli_query($dbc, $query);
 
 if($response){
 
-echo "<table>
+echo "<table class='center'>
 
 <tr><td align='center'><b>First Name</b></td>
 <td align='center'><b>Last Name</b></td>

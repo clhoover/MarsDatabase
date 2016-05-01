@@ -17,7 +17,7 @@ $data = array();
 
 $colNames = array_keys(reset($data));
 
-echo "<table>";
+echo "<table class='center'>";
 echo"<tr>";
 
 foreach($colNames as $colName)

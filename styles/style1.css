@@ -33,7 +33,7 @@ background: #FFFFFF;
 }
 
 #innerwrap2{
-	width:1000px;
+	width:2000px;
 	margin:0 auto;
 	font-size:15px;
 	text-align:center;
@@ -53,11 +53,15 @@ background: #FFFFFF;
 
 }
 
-table{
-width:100%;
+table.center{
+bording-spacing:10px;
+border-collapse: separate;
+margin-left:auto; 
+margin-right:auto;
+
 }
 td {
-height:30px;
+padding:10px;
 }
 
 nav ul
