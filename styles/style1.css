@@ -64,6 +64,11 @@ td {
 padding:10px;
 }
 
+
+div.group{
+padding-right:80px;
+}
+
 nav ul
 {
 list-style-type:none;
