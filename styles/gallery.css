@@ -1,0 +1,230 @@
+﻿/* CSS Document */
+
+* {
+    padding:0;
+    margin:0;
+}
+.clearIt {
+	clear: both;
+}
+
+html {
+	font-size:100%;
+	line-height:1.5;
+}
+
+
+
+
+body {
+background: #FFFFFF; 
+}
+
+#wrap { 
+	
+	width:1200px; 
+	margin:0 auto 0 auto; 
+	overflow:hidden;
+	border: 1px inset #ddd;
+  	border-bottom: 1px inset #eee;
+  	padding: 4px 4px;
+  	background-color: #fff;
+  	border-radius:15px;
+  	box-shadow: inset 0 1.5px 4px #ccc;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+#raised{
+	  border: 1px outset #eee; 
+  		border-radius:15px;
+  		background-color: #ffffff;
+  		box-shadow: 0 0 8px #fff;
+  		overflow:hidden;
+	}
+
+#innerwrap{
+	width:1100px; 
+	margin:0 auto; 
+	text-align:center;
+	font-size:20px;
+	padding-top:10px;
+}
+
+#innerwrap2{
+	width:100%;
+	margin:0 auto;
+	font-size:15px;
+	padding-bottom:40px;
+	margin-left:auto; 
+	margin-right:auto;
+	text-align:center;
+}
+
+#header {
+    width: 1200px;
+    margin: 0 auto;
+    font-size:40px;
+}		
+	
+#banner {
+	height:322px; 
+	width:1190px; 
+	padding:0px 0px 3px 3px;
+
+}
+
+table.center{
+bording-spacing:10px;
+border-collapse: separate;
+margin-left:auto; 
+margin-right:auto;
+
+}
+td {
+padding:10px;
+}
+
+
+div.group{
+}
+
+nav ul
+{
+list-style-type:none;
+margin:0px;
+padding:3px;
+overflow:hidden;
+}
+nav li
+{
+float:left;
+}
+nav a:link, nav a:visited
+{
+display:block;
+width:238px;
+color:#FFFFFF;
+font-weight:bold;
+background: #000000;
+text-align:center;
+padding:20px 0px 20px 0px;
+text-decoration:none;
+}
+nav a:hover
+{
+text-decoration:underline;	
+display:block;
+width:238px;
+color:#000000;
+font-weight:bold;
+background: #FFFFFF;
+text-align:center;
+padding:20px 0px 20px 0px;
+}
+nav a:active
+{
+text-decoration:underline;
+display:block;
+width:238px;
+background: #FFFFFF
+padding:20px 0px 20px 0px;
+box-shadow: 0 0 1px #000;
+}
+
+nav li:first-child a {
+  border-top-left-radius: 10px;
+}
+
+nav li:last-child a {
+  border-top-right-radius: 10px;
+}
+
+
+
+
+
+.opacity{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	color: #FFF;
+	background-color:#FFF;
+	opacity: 0.9;
+	filter: alpha(opacity=60);
+	position: inherit;
+	top: 5%;
+	left:0;
+	padding:.1em;
+	margin:0;
+	max-width:100%;
+}
+img {
+	max-width:100%;
+	height:auto;
+}
+
+.container {
+	max-width:50%;
+   	margin: 0 auto 0;
+	padding: 1em auto .1em;
+	
+}
+section {
+	margin:0 5px;
+    padding:10px;
+	border: solid 1px; #fff;
+	color:#000;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.8) 40%, rgba(255,255,255,0.6) 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(40%,rgba(255,255,255,0.8)), color-stop(100%,rgba(255,255,255,0.6))); 
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.8) 40%,rgba(255,255,255,0.6) 100%); 
+	background: -o-linear-gradient(top, rgba(255,255,255,0.8) 40%,rgba(255,255,255,0.6) 100%); 
+	background: -ms-linear-gradient(top, rgba(255,255,255,0.8) 40%,rgba(255,255,255,0.6) 100%); 
+	background: linear-gradient(to bottom, rgba(255,255,255,0.8) 40%,rgba(255,255,255,0.6) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#99ffffff',GradientType=0 ); 
+    position: relative;
+}
+#photoGallery ul {
+    list-style-type:none;
+}
+.photos li {
+    float: left;
+    position:relative;
+    list-style-type: none;
+}
+.photos img {
+   margin:0 .75em .75em 0; 
+}
+.photos a:before {
+    content:attr(title);
+    display: block;
+	 position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	 background-color:rgba(25,25,25,.8);
+	 color:#fff;
+	text-align: center;
+	 z-index: 50;
+	 margin-right: .75em;
+	
+}
+
+@-webkit-@keyframes shadow_react { 50% { margin:0px 20% 0px 20%; opacity:0.7; } 100% { margin:0px 0px 0px 0px; opacity:0.1; } }
+@-moz-@keyframes shadow_react { 50% { margin:0px 20% 0px 20%; opacity:0.7; } 100% { margin:0px 0px 0px 0px; opacity:0.1; } }
+@-ms-@keyframes shadow_react { 50% { margin:0px 20% 0px 20%; opacity:0.7; } 100% { margin:0px 0px 0px 0px; opacity:0.1; } }
+@-o-@keyframes shadow_react { 50% { margin:0px 20% 0px 20%; opacity:0.7; } 100% { margin:0px 0px 0px 0px; opacity:0.1; } }
+	@keyframes shadow_react { 50% { margin:0px 20% 0px 20%; opacity:0.7; } 100% { margin:0px 0px 0px 0px; opacity:0.1; } }
+ 
+ 
+ 
+ @media screen and (min-width:400px) { 
+
+.photos img {
+   margin:0 .01em .01em 0; 
+}
+
+
+
+
+
+
+
