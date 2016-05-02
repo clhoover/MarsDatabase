@@ -33,7 +33,7 @@ Contributions:
 
 Christopher Hoover: Front End/PHP Coding, Implemented Git-Repo for group
 
-Jeanette Reser: Back End/SQL Coding, Develop SQL statements, Data Base Normalization
+Jeanette Reser: Back End/SQL Coding, Develop SQL statements, Data Base Normalization, Reviewed ER Diagram
 
 Mitchell Warrenburg: Develop SQL statements for video presentation, Data Base Normalization
 
